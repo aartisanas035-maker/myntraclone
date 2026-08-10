@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothing & Fashion - Myntra Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Category-specific styling */
+        .category-header {
+            background: linear-gradient(135deg, #282c3f 0%, #1a1c24 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .category-header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .category-header p {
+            color: #ff3f6c;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            flex-wrap: wrap;
+        }
+
+        .filter-pill {
+            padding: 8px 20px;
+            border: 1px solid #eaeaec;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #282c3f;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .filter-pill:hover, .filter-pill.active {
+            background: #ff3f6c;
+            color: white;
+            border-color: #ff3f6c;
+        }
+
+        .brand-gallery-title {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .brand-gallery-title h2 {
+            font-size: 26px;
+            color: #282c3f;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+
+        .brand-gallery-title p {
+            font-size: 14px;
+            color: #696e79;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .brand-card {
+            padding-bottom: 15px;
+        }
+
+        .brand-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .brand-card h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #282c3f;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">MYNTRA</div>
+
+        <nav>
+            <ul>
+                <li><a href="men.html" style="text-decoration: none; color: #ff3f6c;">Men</a></li>
+                <li><a href="women.html" style="text-decoration: none; color: inherit;">Women</a></li>
+                <li><a href="kids.html" style="text-decoration: none; color: inherit;">Kids</a></li>
+                <li><a href="home.html" style="text-decoration: none; color: inherit;">Home</a></li>
+                <li><a href="beauty.html" style="text-decoration: none; color: inherit;">Beauty</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for men's products...">
+        </div>
+
+        <div class="wishlist" onclick="window.location.href='wishlist.html'">
+            ♡
+            <span id="wishlist-count" class="wishlist-badge">0</span>
+        </div>
+
+        <div class="cart" onclick="window.location.href='cart.html'">
+            🛒
+            <span id="cart-count" class="cart-badge">0</span>
+        </div>
+
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="category-header">
+        <h1>MEN'S COLLECTION</h1>
+        <p>FLAT 40-70% OFF ON TOP BRANDS</p>
+    </section>
+
+    <!-- Quick Filter Pills -->
+    <div class="filter-bar">
+        <span class="filter-pill active">Formals</span>
+        <span class="filter-pill">T-Shirts</span>
+        <span class="filter-pill">Casuals</span>
+        <span class="filter-pill">Jeans & Trousers</span>
+        <span class="filter-pill">Footwear</span>
+        <span class="filter-pill">Accessories</span>
+    </div>
+
+    <!-- Section Header -->
+    <div class="brand-gallery-title">
+        <h2>The Brand Gallery</h2>
+        <p>Great Styles, Great deals</p>
+    </div>
+
+    <!-- Brand Cards Grid -->
+    <section class="products">
+
+        <!-- ZARA -->
+        <div class="card brand-card">
+            <img src="image/zara.jpg" alt="ZARA">
+            <h3>ZARA</h3>
+        </div>
+
+        <!-- PUMA -->
+        <div class="card brand-card">
+            <img src="image/puma.jpg" alt="PUMA">
+            <h3>PUMA</h3>
+        </div>
+
+        <!-- H&M -->
+        <div class="card brand-card">
+            <img src="image/hm.jpg" alt="H&M">
+            <h3>H&M</h3>
+        </div>
+
+        <!-- CASIO -->
+        <div class="card brand-card">
+            <img src="image/casio.jpg" alt="CASIO">
+            <h3>CASIO</h3>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>ONLINE SHOPPING</h3>
+                <p><a href="men.html" style="text-decoration: none; color: inherit;">Men</a></p>
+                <p><a href="women.html" style="text-decoration: none; color: inherit;">Women</a></p>
+                <p><a href="kids.html" style="text-decoration: none; color: inherit;">Kids</a></p>
+                <p><a href="home.html" style="text-decoration: none; color: inherit;">Home</a></p>
+                <p><a href="beauty.html" style="text-decoration: none; color: inherit;">Beauty</a></p>
+            </div>
+
+            <div class="footer-box">
+                <h3>CUSTOMER POLICIES</h3>
+                <p>Contact Us</p>
+                <p>FAQ</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>CONTACT</h3>
+                <p>Email: myntraclone@gmail.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Myntra Clone Project | Created by Sharwari and Aarti
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
