@@ -52,6 +52,13 @@ nav ul li:hover{
     border-radius:5px;
 }
 
+.no-results{
+    text-align:center;
+    padding:30px;
+    color:#696e79;
+    font-weight:600;
+}
+
 /* ================= LOGIN BUTTON ================= */
 
 .login-btn{

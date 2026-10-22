@@ -128,6 +128,49 @@ function logout() {
     window.location.href = "index.html";
 }
 
+// ================= SEARCH =================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    let input = document.querySelector(".search-box input");
+    let list = document.querySelector(".products");
+
+    if (!input || !list) return;
+
+    let cards = Array.from(list.querySelectorAll(".card"));
+
+    let empty = document.createElement("p");
+    empty.className = "no-results";
+    empty.textContent = "No products found for your search.";
+    empty.hidden = true;
+    list.after(empty);
+
+    input.addEventListener("input", function () {
+
+        let query = input.value.trim().toLowerCase();
+        let shown = 0;
+
+        cards.forEach(function (card) {
+
+            let title = card.querySelector("h3");
+            let img = card.querySelector("img");
+
+            let text = (
+                (title ? title.textContent : "") + " " +
+                (img ? img.alt : "")
+            ).toLowerCase();
+
+            let match = text.includes(query);
+
+            card.style.display = match ? "" : "none";
+
+            if (match) shown++;
+        });
+
+        empty.hidden = shown > 0;
+    });
+});
+
 // ================= HEADER STATE =================
 
 document.addEventListener("DOMContentLoaded", function () {
