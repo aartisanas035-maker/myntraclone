@@ -1,7 +1,7 @@
 // ================= DUMMY AUTH (no backend) =================
 // Only this demo account can log in. Session is kept in localStorage.
 
-const DEMO_USER = { mobile: "9876543210", name: "Demo User" };
+const DEMO_USER = { mobile: "1234567890", name: "Demo User" };
 
 function currentUser() {
 
