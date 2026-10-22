@@ -67,6 +67,30 @@ nav ul li:hover{
     background:#e62e5c;
 }
 
+/* Logged-in header state */
+
+.user-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:bold;
+    color:#282c3f;
+}
+
+.user-box button{
+    border:none;
+    background:#ff3f6c;
+    color:white;
+    padding:8px 14px;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.user-box button:hover{
+    background:#e62e5c;
+}
+
 /* ================= CART ================= */
 
 .cart{
@@ -264,6 +288,16 @@ footer hr{
     border-radius:5px;
     margin-bottom:20px;
     font-size:16px;
+}
+
+.demo-hint{
+    font-size:13px;
+    color:#555;
+    margin:-10px 0 20px;
+}
+
+.demo-hint b{
+    color:#ff3f6c;
 }
 
 .terms{
